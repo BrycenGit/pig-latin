@@ -30,6 +30,24 @@ _{Let people know what to do if they run into any issues or have questions, idea
 
 _{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
 
+## Specs
+
+The program recognizes a word that begins with a vowel and adds way to the end of it.
+  Input Example: "apple"
+  Output Example: "appleway"
+
+The program recognizes a word that begins with y, moves it to the back and adds ay to the end of it.
+  Input Example: "yell"
+  Output Example: "elloyay"
+  
+The program recognizes a word that begins with q followed by a u, moves it to the back and adds ay to the end of it.
+  Input Example: "queen"
+  Output Example: "eenquay"
+
+The program recognizes a word that begins with a consonant, moves it to the back and adds ay to the end of it.
+  Input Example: "program"
+  Output Example: "ogrampray"
+
 ## TDD
 
 Describe: addWay()
