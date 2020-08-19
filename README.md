@@ -30,6 +30,24 @@ _{Let people know what to do if they run into any issues or have questions, idea
 
 _{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
 
+## TDD
+
+Describe: addWay()
+Test: "For words beginning with a vowel, add "way" to the end."
+Expect: (addWay("a")).toEqual("away");
+
+Describe: moveCons()
+Test: "For words beginning with one or more consonants, move all of the first consecutive consonants to the end, and add "ay"."
+Expect: (moveCons("phone")).toEqual("onephay");
+
+Describe: moveConsY()
+Test: "For words beginning with "y", treat "y" as a consonant."
+Expect: (moveConsY("your")).toEqual("ouryay");
+
+Describe: movConsQu()
+Test: "If the first consonants include "qu", move the "u" along with the "q". Don't forget about words like "squeal" where "qu" doesn't come first!"
+Expect: (moveConsQu("squeeze")).toEqual("eezesquay");
+
 ### License
 
 This software is licensed under the MIT license.
