@@ -41,12 +41,12 @@ Test: "For words beginning with one or more consonants, move all of the first co
 Expect: (moveCons("phone")).toEqual("onephay");
 
 Describe: moveConsY()
-Test: "For words beginning with "y", treat "y" as a consonant."
+Test: "For words beginning with "y", treat "y" as a consonant, and add "ay"."
 Expect: (moveConsY("your")).toEqual("ouryay");
 
 Describe: movConsQu()
-Test: "If the first consonants include "qu", move the "u" along with the "q". Don't forget about words like "squeal" where "qu" doesn't come first!"
-Expect: (moveConsQu("squeeze")).toEqual("eezesquay");
+Test: "If the first consonants include "qu", move the "u" along with the "q", and add "ay"."
+Expect: (moveConsQu("queen")).toEqual("eenquay");
 
 ### License
 
